@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import url("reset.css");
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2015-07-22 11:04:59
+ * @version $Id$
+ */
+
+ /* ------------------------------------
+ BASIC SETUP
+ --------------------------------------*/
+ .clearfix:after,.clearfix:before{
+    content: "";
+    display: table;
+}
+
+header,footer,article,section,article,hgroup{
+    display: block;
+}
+
+body{
+    background: url('../images/background.png') repeat;
+    font:12px/18px Helvetica,Arial,sans-serif;
+}
+
+a {
+    color: #e46f2e;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #ea2c00;
+}
+
+/*----------------------------------------
+=HEADER
+----------------------------------------*/
+header{
+    background: url('../images/header_background.png') repeat;
+    overflow: auto;
+    position: relative;
+}
+
+header>div{
+    width:95%;
+    margin:0 auto;
+}
+
+header h1 a{
+    float: left;
+    width: 196px;
+    height: 90px;
+    background: url('../images/logo.png') no-repeat;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul li{
+    float: right;
+}
+
+header nav ul li a{
+    display: inline-block;
+    padding: 0 25px;
+    font: bold 14px/90px "proxima-nova-extra-condensed-1", "proxima-nova-extra-condensed-2", Helvetica, Arial, sans-serif;
+    color: #cbb384;
+}
+
+header nav ul li  a:hover{
+    color: #e46f2e;
+}
+
+.gallery header nav ul li.gallery a{
+    color: #fff;
+}
+
+.gallery header nav ul li#rss,.gallery header nav ul li#twitter,.gallery header nav ul li#facebook{
+    margin-left: 10px;
+}
+
+header nav ul li#rss a {
+    padding: 0 0 0 15px;
+    width: 22px;
+    background: url("../images/icon_rss_small.png") 100% 50% no-repeat;
+    text-indent: -9999px;
+}
+
+header nav ul li#twitter a {
+    padding: 0;
+    width: 22px;
+    background: url("../images/icon_twitter_small.png") 0 50% no-repeat;
+    text-indent: -9999px;
+}
+
+header nav ul li#facebook a {
+    padding: 0 15px 0 0;
+    width: 22px;
+    background: url("../images/icon_facebook_small.png") 0 50% no-repeat;
+    text-indent: -9999px;
+}
+
+
+
+
+/* ---------------------------------------
+=FOOTER
+----------------------------------------*/
+
+/* ---------------------------------------
+=GALLERY
+----------------------------------------*/
