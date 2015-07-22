@@ -20,7 +20,7 @@ header,footer,article,section,article,hgroup{
 }
 
 body{
-    background: url('../images/background.png') repeat;
+      background: #e5ddcd url("../images/background.png") 0 90px repeat-x;
     font:12px/18px Helvetica,Arial,sans-serif;
 }
 
@@ -108,7 +108,150 @@ header nav ul li#facebook a {
 /* ---------------------------------------
 =FOOTER
 ----------------------------------------*/
+.gallery footer{
+    clear: both;
+    overflow: auto;
+    padding: 36px 0 54px 0;
+    background:#3A352C;
+    font-size:14px;
+    color:#cbb384;
+}
+
+.gallery  footer div{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.gallery footer section{
+    width:47%;
+    margin:0 1%;
+}
+
+footer #about{
+    float: left;
+}
+
+footer #submit{
+    float: right;
+}
+
+footer h2{
+    color: #fff;
+    text-transform: uppercase;
+    font:bold 36px/54px "proxima-nova-extra-condensed-1", "proxima-nova-extra-condensed-2", Helvetica, Arial, sans-serif;
+}
+footer p{
+    margin-bottom: 18px;
+}
+
+footer #about>ul>li{
+    float: left;
+}
+
+footer a{
+    font-weight: bold;
+}
+
+footer #about .rss a, footer #about .twitter a, footer #about .facebook a {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  font-size: 12px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+footer #about .rss a {
+  padding-right: 25px;
+  background: url('../images/icon_rss_large.png') no-repeat;
+}
+
+footer #about .twitter a {
+  padding-right: 25px;
+  background: url('../images/icon_twitter_large.png') no-repeat;
+}
+
+footer #about .facebook a {
+  background: url('../images/icon_facebook_large.png') no-repeat;
+}
+
+footer #about .rss a:hover, footer #about .twitter a:hover, footer #about .facebook a:hover {
+  color: #e46f2e;
+}
+
+/* footer submit part*/
+footer #submit hgroup h3{
+    display: none;
+}
+footer #submit a{
+    text-decoration: underline;
+}
+footer #submit a:hover{
+    color: #fff;
+}
 
 /* ---------------------------------------
 =GALLERY
 ----------------------------------------*/
+
+#gallery{
+    width: 95%;
+    margin: 0 auto;
+    padding: 18px 0;
+}
+
+#gallery h1{
+    font:bold 14px/27px Helvetica,Arial,sans-serif;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+}
+
+/* 显示四列 */
+#gallery article{
+    float: left;
+    width:23%;
+    margin:10px 1%;
+    position: relative;
+}
+
+#gallery .inner{
+    display: block;
+    padding: 13px;
+    text-decoration: none;
+    background:#efeadf url('../images/item_background.png') bottom repeat-x;
+    border:1px solid #fff;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    box-shadow: 0 0 10px #baaa89;
+    -webkit-box-shadow: 0 0 10px #baaa89;
+    -moz-box-shadow: 0 0 10px #baaa89;
+}
+
+#gallery .inner>img{
+    display: block;
+    width: 100%;
+}
+
+#gallery .details{
+    display: none;
+    width:100%;
+    padding: 30px 0 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgb(239,234,223);
+    background:rgba(239,234,223,0.8);
+    border-radius: 10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+}
+
+#gallery .inner:hover .details{
+    display: block;
+}
+
+
+
+
