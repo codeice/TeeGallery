@@ -252,6 +252,68 @@ footer #submit a:hover{
     display: block;
 }
 
+#gallery .inner .details>h1{
+    padding: 0 15px 8px 30px;
+    text-align: left;
+    color: #000;
+    font: bold 20px/24px;
+}
+
+#gallery .inner .details>dl{
+    padding: 0 15px 8px 30px;
+    color: #000;
+}
+
+#gallery .inner .details dl dt{
+    width: 35%;
+    float: left;
+    font-weight: bold;
+    margin-bottom:5px;
+}
+
+#gallery .inner .details dl dd{
+    float: left;
+    width:65%;
+    margin-bottom:5px;
+}
 
 
 
+/* ---------------------------------------
+             RESPONSIVE SYTLES
+ ----------------------------------------*/
+
+ @media screen and (min-width: 1150px) {
+    /*Columns increased to 5*/
+
+    #gallery article {
+        width: 18.5%;
+        margin-left: 0.75%;
+        margin-right: 0.75%;
+    }
+
+}
+
+@media screen and (max-width: 935px) {
+    /*Columns decreased to 3*/
+    #gallery article {
+        width: 31.3333%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    /*columns decreased to 2*/
+    #gallery article {
+        margin: 2%;
+        width: 46%;
+    }
+
+        #gallery article a.inner {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+}
